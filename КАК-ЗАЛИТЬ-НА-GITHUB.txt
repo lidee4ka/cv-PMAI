@@ -1,0 +1,30 @@
+Скопируйте эту папку на компьютер:
+
+  C:\Users\Лидия\Yandex.Disk\Резюме\cv-PMAI-для-github
+
+Zip рядом:
+
+  C:\Users\Лидия\Yandex.Disk\Резюме\cv-PMAI-github-pages.zip
+
+Сайт должен открыться здесь: https://lidee4ka.github.io/cv-PMAI/
+
+1. https://github.com/new
+   Имя репозитория: cv-PMAI
+   Public, без README / gitignore / license
+
+2. Залейте СОДЕРЖИМОЕ этой папки (не zip и не внешнюю обёртку).
+   GitHub Desktop надёжнее, чем загрузка в браузере:
+   File → Add local repository → эта папка → Publish.
+
+   В папке обязательно должны быть:
+   index.html
+   .nojekyll
+   assets/          ← CSS и JS, без них страница «голая»
+   avatar.jpg, sites/, cases/, files/
+
+3. Settings → Pages
+   Source: Deploy from a branch
+   Branch: main, folder: / (root) → Save
+
+Не выбирайте GitHub Actions. Не включайте Jekyll.
+Дизайнерское резюме на cv-reu не трогайте.
