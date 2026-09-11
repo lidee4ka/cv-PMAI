@@ -17,6 +17,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lidee4ka.github.io/cv-PMAI/" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="alternate" hreflang="ru" href="https://lidee4ka.github.io/cv-PMAI/" />
+    <link rel="alternate" hreflang="en" href="https://lidee4ka.github.io/cv-PMAI/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://lidee4ka.github.io/cv-PMAI/" />
     <title>Лидия Мялкина&nbsp;— Product Manager · UX/UI · Vibe-coding</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,35 +28,73 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/myfinishline-CqvEN-WX.js"></script>
+    <script>
+      (function () {
+        var lang = 'ru'
+        try {
+          var q = new URLSearchParams(location.search).get('lang')
+          if (q === 'en' || q === 'ru') lang = q
+          else if (localStorage.getItem('cv-pmai-lang-manual') === '1') {
+            var stored = localStorage.getItem('cv-pmai-lang')
+            if (stored === 'en' || stored === 'ru') lang = stored
+          } else {
+            lang = String(navigator.language || '').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en'
+          }
+        } catch (e) {
+          lang = String(navigator.language || 'ru').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en'
+        }
+        document.documentElement.lang = lang
+        document.documentElement.setAttribute('data-lang', lang)
+        if (lang === 'en') document.documentElement.classList.add('i18n-pending')
+        setTimeout(function () {
+          document.documentElement.classList.remove('i18n-pending')
+        }, 1600)
+      })()
+    </script>
+    <style>
+      html.i18n-pending body {
+        visibility: hidden;
+      }
+    </style>
+    <noscript>
+      <style>
+        html.i18n-pending body {
+          visibility: visible !important;
+        }
+      </style>
+    </noscript>
+    <script type="module" crossorigin src="./assets/myfinishline-CmzNOOVt.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
-    <link rel="stylesheet" crossorigin href="./assets/myfinishline-D_pEZcl0.css">
+    <link rel="stylesheet" crossorigin href="./assets/myfinishline-bPrMedBc.css">
   </head>
   <body>
-    <a class="skip" href="#main">К&nbsp;содержанию</a>
+    <a class="skip" href="#main" data-i18n="skip">К&nbsp;содержанию</a>
     <header class="site-header">
       <div class="wrap header-bar">
         <a class="brand" href="#hero">
           <img class="brand-mark" src="./avatar.jpg" alt="" width="42" height="42" />
           <span>
-            <b>Лидия Мялкина</b>
-            <span>Product · UX/UI · Vibe-coding</span>
+            <b data-i18n="brand.name">Лидия Мялкина</b>
+            <span data-i18n="brand.role">Product · UX/UI · Vibe-coding</span>
           </span>
         </a>
-        <nav class="nav" aria-label="Разделы">
-          <a href="#obo-mne">Почему я</a>
-          <a href="#kejsy">Кейсы</a>
-          <a href="#behance">Figma</a>
-          <a href="#sajty">Сайты</a>
-          <a href="#ai">AI</a>
-          <a href="#opyt">Опыт</a>
-          <a href="#obrazovanie">Образование</a>
-          <a href="#kontakty">Контакты</a>
+        <nav class="nav" aria-label="Разделы" data-i18n-aria="nav.label">
+          <a href="#obo-mne" data-i18n="nav.why">Почему я</a>
+          <a href="#kejsy" data-i18n="nav.cases">Кейсы</a>
+          <a href="#behance" data-i18n="nav.figma">Figma</a>
+          <a href="#sajty" data-i18n="nav.sites">Сайты</a>
+          <a href="#ai" data-i18n="nav.ai">AI</a>
+          <a href="#opyt" data-i18n="nav.experience">Опыт</a>
+          <a href="#obrazovanie" data-i18n="nav.education">Образование</a>
+          <a href="#kontakty" data-i18n="nav.contact">Контакты</a>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-primary" href="#kontakty">Связаться</a>
-          <button class="btn btn-ghost header-print" data-print type="button">Печать / PDF</button>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Меню">
+          <div class="lang-switch" role="group" aria-label="Язык" data-i18n-aria="lang.label">
+            <button type="button" data-set-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="btn btn-primary" href="#kontakty" data-i18n="cta.contact">Связаться</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Меню" data-i18n-aria="nav.menu">
             <span></span>
             <span></span>
             <span></span>
@@ -66,45 +108,45 @@
         <div class="wrap">
           <div class="hero-grid">
             <div>
-              <p class="kicker">Product Manager · UX/UI · AI Vibe-coding</p>
-              <h1>Лидия Мялкина</h1>
-              <p class="lead">
+              <p class="kicker" data-i18n="hero.kicker">Product Manager · UX/UI · AI Vibe-coding</p>
+              <h1 data-i18n="brand.name">Лидия Мялкина</h1>
+              <p class="lead" data-i18n="hero.lead">
                 Продуктовый менеджер с&nbsp;сильной UX/UI-экспертизой. Превращаю гипотезы в&nbsp;CJM, собираю макеты
                 в&nbsp;Figma и&nbsp;рабочие прототипы с&nbsp;помощью AI и&nbsp;вайбкодинга. 15&nbsp;лет в&nbsp;IT.
                 Развиваю продукты минимальными ресурсами (Lean-подход): от&nbsp;исследования до&nbsp;бэклога,
                 метрик и&nbsp;запуска.
               </p>
-              <p class="muted">
+              <p class="muted" data-i18n="hero.muted">
                 Удалённо (MSK&nbsp;/ JST). Ищу full-time вовлечение в&nbsp;один сильный продукт. Юридически комфортен
                 формат НПД (самозанятость) на&nbsp;старте с&nbsp;перспективой перехода в&nbsp;штат.
               </p>
-              <p class="lead-cta">
+              <p class="lead-cta" data-i18n="hero.cta">
                 Нужен продакт, который сам соберёт кликабельный прототип и&nbsp;проверит гипотезу до&nbsp;разработки?
                 <a href="#kontakty">Напишите</a>&nbsp;— покажу на&nbsp;вашей задаче.
               </p>
               <ul class="pills">
-                <li>Figma и&nbsp;Figma Jam</li>
-                <li>AI и&nbsp;вайбкодинг</li>
-                <li>Геймификация и&nbsp;outdoor</li>
-                <li>Lean&nbsp;/ минимальные ресурсы</li>
-                <li>English: docs &amp; UI copy</li>
+                <li data-i18n="pill.figma">Figma и&nbsp;Figma Jam</li>
+                <li data-i18n="pill.ai">AI и&nbsp;вайбкодинг</li>
+                <li data-i18n="pill.game">Геймификация и&nbsp;outdoor</li>
+                <li data-i18n="pill.lean">Lean&nbsp;/ минимальные ресурсы</li>
+                <li data-i18n="pill.en">English: docs &amp; UI copy</li>
               </ul>
             </div>
             <aside>
               <div class="hero-card">
                 <dl>
-                  <dt>Роль</dt>
-                  <dd>Product manager · UX/UI · vibe-coding</dd>
-                  <dt>Сейчас</dt>
-                  <dd>BEANABOX&nbsp;/ ООО «Чебоко»</dd>
-                  <dt>Формат</dt>
-                  <dd>Full-time · НПД на&nbsp;старте</dd>
-                  <dt>Связь</dt>
+                  <dt data-i18n="card.role">Роль</dt>
+                  <dd data-i18n="card.roleVal">Product manager · UX/UI · vibe-coding</dd>
+                  <dt data-i18n="card.now">Сейчас</dt>
+                  <dd data-i18n="card.nowVal">BEANABOX&nbsp;/ ООО «Чебоко»</dd>
+                  <dt data-i18n="card.format">Формат</dt>
+                  <dd data-i18n="card.formatVal">Full-time · НПД на&nbsp;старте</dd>
+                  <dt data-i18n="card.connect">Связь</dt>
                   <dd>
                     <a href="mailto:lv@mialkina.ru">lv@mialkina.ru</a><br />
                     <a href="https://t.me/LidaMialkina" target="_blank" rel="noreferrer">@LidaMialkina</a>
                   </dd>
-                  <dt>Портфолио</dt>
+                  <dt data-i18n="card.portfolio">Портфолио</dt>
                   <dd>
                     <a href="https://www.behance.net/lidee4ka" target="_blank" rel="noreferrer">Behance</a>
                     ·
@@ -120,14 +162,14 @@
       <section class="section" id="obo-mne">
         <div class="wrap">
           <div class="section-head">
-            <h2>Почему я&nbsp;подхожу</h2>
-            <p class="muted">Outdoor, продукт руками, вайбкодинг и&nbsp;метрики</p>
+            <h2 data-i18n="why.title">Почему я&nbsp;подхожу</h2>
+            <p class="muted" data-i18n="why.sub">Outdoor, продукт руками, вайбкодинг и&nbsp;метрики</p>
           </div>
           <div class="reason-grid">
             <article class="card">
               <div class="num">01</div>
-              <h3>Outdoor, маршруты и&nbsp;геймификация</h3>
-              <p>
+              <h3 data-i18n="why.1.title">Outdoor, маршруты и&nbsp;геймификация</h3>
+              <p data-i18n="why.1.body">
                 В&nbsp;ТурГении с&nbsp;нуля спроектировала платформу вокруг природных локаций и&nbsp;маршрутов.
                 25+&nbsp;CustDev, CJM, геймифицированный онбординг. Понимаю, как&nbsp;мотивировать двигаться
                 по&nbsp;маршруту, и&nbsp;умею резать скоуп, чтобы запустить MVP в&nbsp;срок.
@@ -135,16 +177,16 @@
             </article>
             <article class="card">
               <div class="num">02</div>
-              <h3>Product и&nbsp;design в&nbsp;одних руках</h3>
-              <p>
+              <h3 data-i18n="why.2.title">Product и&nbsp;design в&nbsp;одних руках</h3>
+              <p data-i18n="why.2.body">
                 Собираю макеты в&nbsp;Figma, логику переходов в&nbsp;Figma Jam, историю продукта в&nbsp;<a href="https://buildin.ai" target="_blank" rel="noreferrer">Buildin</a>.
                 В&nbsp;разработку отдаю ТЗ. Концепт сразу превращается в&nbsp;проверяемый продукт.
               </p>
             </article>
             <article class="card">
               <div class="num">03</div>
-              <h3>AI vibe-coding и&nbsp;рабочие прототипы</h3>
-              <p>
+              <h3 data-i18n="why.3.title">AI vibe-coding и&nbsp;рабочие прототипы</h3>
+              <p data-i18n="why.3.body">
                 Гипотезу можно кликнуть, пока бэклог ещё в&nbsp;разработке. С&nbsp;AI собираю HTML/CSS/JS
                 и&nbsp;выкладываю на&nbsp;GitHub Pages. Понимаю структуру кода, правлю вёрстку и&nbsp;собираю базу
                 для&nbsp;проверки UX. Английский: свободно читаю документацию к&nbsp;API и&nbsp;инструментам, пишу
@@ -154,8 +196,8 @@
             </article>
             <article class="card">
               <div class="num">04</div>
-              <h3>Фокус на&nbsp;метриках</h3>
-              <p>
+              <h3 data-i18n="why.4.title">Фокус на&nbsp;метриках</h3>
+              <p data-i18n="why.4.body">
                 На&nbsp;BEANABOX ращу базу и&nbsp;органику lean-подходом: каталог, SEO, сценарий закупки.
                 За&nbsp;апрель–август 2026 база mini-app +52&nbsp;%, каталог +26&nbsp;%, органика сайта ×8,3.
               </p>
@@ -167,65 +209,79 @@
       <section class="section" id="kejsy">
         <div class="wrap">
           <div class="section-head">
-            <h2>Кейсы</h2>
-            <p class="muted">Три сюжета: outdoor Mini App, закупка в&nbsp;Telegram и&nbsp;вайбкодинг-прототип</p>
+            <h2 data-i18n="cases.title">Кейсы</h2>
+            <p class="muted" data-i18n="cases.sub">Три сюжета: outdoor Mini App, закупка в&nbsp;Telegram и&nbsp;вайбкодинг-прототип</p>
           </div>
 
           <article class="case" id="tourgenius">
             <div class="case-body">
               <div class="case-copy">
-                <span class="tag">Кейс 01 · ТурГений</span>
-                <h3>Mini App: маршруты, события, онбординг</h3>
+                <span class="tag" data-i18n="tg.tag">Кейс 01 · ТурГений</span>
+                <h3 data-i18n="tg.h3">Mini App: маршруты, события, онбординг</h3>
                 <div class="meta-row">
-                  <span>Product &amp; Delivery Lead + UX/UI</span>
-                  <span>11&nbsp;месяцев</span>
-                  <span>окт 2024&nbsp;— авг 2025</span>
+                  <span data-i18n="tg.role">Product &amp; Delivery Lead + UX/UI</span>
+                  <span data-i18n="tg.months">11&nbsp;месяцев</span>
+                  <span data-i18n="tg.dates">окт 2024&nbsp;— авг 2025</span>
                 </div>
-                <p>
+                <p data-i18n="tg.p">
                   Платформа для&nbsp;поиска и&nbsp;бронирования локальных событий на&nbsp;природе в&nbsp;Республике Алтай
                 </p>
                 <ul>
-                  <li>
+                  <li data-i18n="tg.li1">
                     <b>Исследования.</b> 25+&nbsp;глубинных интервью (CustDev), JTBD и&nbsp;карта пути пользователя.
                   </li>
-                  <li>
+                  <li data-i18n="tg.li2">
                     <b>UX/UI.</b> Архитектура Mini App: поиск, фильтры, карта маршрутов, каталог, бронирование.
                   </li>
-                  <li>
+                  <li data-i18n="tg.li3">
                     <b>Геймификация.</b> Онбординг из&nbsp;15&nbsp;экранов вовлечения. Осознанно вырезала из&nbsp;первой
                     версии, чтобы уложиться в&nbsp;срок запуска.
                   </li>
-                  <li>
+                  <li data-i18n="tg.li4">
                     <b>Результат.</b> База из&nbsp;256&nbsp;событий и&nbsp;100&nbsp;природных локаций. Две удалённые команды
                     разработки, продукт доведён до&nbsp;функционального MVP.
                   </li>
                 </ul>
                 <p>
-                  <a href="./files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf">Скачать презентацию кейса (PDF)</a>
+                  <a href="./files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf" data-i18n="tg.pdf"
+                    >Скачать презентацию кейса (PDF)</a
+                  >
                 </p>
               </div>
               <div class="case-visual case-visual--phone">
-                <img src="./cases/tourgenius-01.jpg" alt="Макет Mini App ТурГений: карточка места в&nbsp;ленте" />
+                <img
+                  src="./cases/tourgenius-01.jpg"
+                  alt="Макет Mini App ТурГений: карточка места в&nbsp;ленте"
+                  data-i18n-alt="tg.alt1"
+                />
               </div>
             </div>
             <div class="slide-strip">
-              <img src="./cases/tourgenius-02.jpg" alt="Продукт, проблема и&nbsp;решение ТурГения" />
-              <img src="./cases/tourgenius-03.jpg" alt="Экраны Mini App ТурГений" />
-              <img src="./cases/tourgenius-05.jpg" alt="Зоны ответственности и&nbsp;подход Zero-to-One" />
+              <img
+                src="./cases/tourgenius-02.jpg"
+                alt="Продукт, проблема и&nbsp;решение ТурГения"
+                data-i18n-alt="tg.alt2"
+              />
+              <img src="./cases/tourgenius-03.jpg" alt="Экраны Mini App ТурГений" data-i18n-alt="tg.alt3" />
+              <img
+                src="./cases/tourgenius-05.jpg"
+                alt="Зоны ответственности и&nbsp;подход Zero-to-One"
+                data-i18n-alt="tg.alt4"
+              />
             </div>
           </article>
 
           <article class="case case--stack" id="beanabox">
             <div class="case-body case-body--app">
               <div class="case-copy">
-                <span class="tag">Кейс 02 · BEANABOX</span>
-                <h3>B2B-маркетплейс зелёного кофе: продукт и&nbsp;моя роль</h3>
+                <span class="tag" data-i18n="bb.tag">Кейс 02 · BEANABOX</span>
+                <h3 data-i18n="bb.h3">B2B-маркетплейс зелёного кофе: продукт и&nbsp;моя роль</h3>
                 <div class="meta-row">
-                  <span>Product Manager / Project Lead</span>
-                  <span>2024&nbsp;— н.&nbsp;в.</span>
-                  <span>ООО «Чебоко»</span>
+                  <span data-i18n="bb.role">Product Manager / Project Lead</span>
+                  <span data-i18n="bb.dates">2024&nbsp;— н.&nbsp;в.</span>
+                  <span data-i18n="bb.co">ООО «Чебоко»</span>
                 </div>
-                <p>
+                <p data-i18n="bb.p">
                   BEANABOX&nbsp;— витрина зелёного кофе для&nbsp;обжарщиков: лоты со&nbsp;всего мира, закупка от&nbsp;сэмпла
                   до&nbsp;партии. Покупают в&nbsp;Telegram Mini App: каталог, корзина, сопровождение заказа.
                   Сайт
@@ -233,16 +289,16 @@
                   собирает спрос и&nbsp;ведёт в&nbsp;мессенджер.
                 </p>
                 <ul>
-                  <li>
+                  <li data-i18n="bb.li1">
                     <b>Продукт.</b> Веду контур mini-app и&nbsp;промо-сайта: сценарии закупки, фильтры каталога,
                     связка витрины с&nbsp;логистикой и&nbsp;счётом.
                   </li>
-                  <li>
+                  <li data-i18n="bb.li2">
                     <b>Роль.</b> Product и&nbsp;delivery в&nbsp;одних руках: ТЗ в&nbsp;разработку, схемы состояний
                     в&nbsp;Figma Jam, история решений в&nbsp;<a href="https://buildin.ai" target="_blank" rel="noreferrer">Buildin</a>,
                     UX/UI в&nbsp;Figma, тексты и&nbsp;SEO с&nbsp;AI.
                   </li>
-                  <li>
+                  <li data-i18n="bb.li3">
                     <b>Lean.</b> Гипотеза → макет → прототип → запуск, минимальные ресурсы.
                   </li>
                 </ul>
@@ -264,16 +320,20 @@
                 />
               </div>
             </div>
-            <p class="phones-caption">
+            <p class="phones-caption" data-i18n="bb.caption">
               Каталог в&nbsp;Telegram Mini App и&nbsp;бот. Сайт&nbsp;—
               <a href="https://beanabox.ru/" target="_blank" rel="noreferrer">beanabox.ru</a>.
             </p>
             <div class="case-copy">
-              <div class="infographic" aria-label="Относительный рост продукта BEANABOX с&nbsp;апреля по&nbsp;август 2026">
-                <p class="infographic-kicker">Рост контура · апрель → август 2026</p>
+              <div
+                class="infographic"
+                aria-label="Относительный рост продукта BEANABOX с&nbsp;апреля по&nbsp;август 2026"
+                data-i18n-aria="bb.chartAria"
+              >
+                <p class="infographic-kicker" data-i18n="bb.kicker">Рост контура · апрель → август 2026</p>
                 <ul class="chart">
                   <li>
-                    <span class="chart-name">База mini-app</span>
+                    <span class="chart-name" data-i18n="bb.users">База mini-app</span>
                     <span class="chart-bars" aria-hidden="true">
                       <span class="chart-bar chart-bar--from" style="--w: 66%"></span>
                       <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
@@ -281,7 +341,7 @@
                     <strong>+52%</strong>
                   </li>
                   <li>
-                    <span class="chart-name">Каталог лотов</span>
+                    <span class="chart-name" data-i18n="bb.catalog">Каталог лотов</span>
                     <span class="chart-bars" aria-hidden="true">
                       <span class="chart-bar chart-bar--from" style="--w: 80%"></span>
                       <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
@@ -289,7 +349,7 @@
                     <strong>+26%</strong>
                   </li>
                   <li>
-                    <span class="chart-name">Органика на&nbsp;сайте</span>
+                    <span class="chart-name" data-i18n="bb.org">Органика на&nbsp;сайте</span>
                     <span class="chart-bars" aria-hidden="true">
                       <span class="chart-bar chart-bar--from" style="--w: 12%"></span>
                       <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
@@ -297,36 +357,40 @@
                     <strong>×8,3</strong>
                   </li>
                 </ul>
-                <p class="chart-foot">Только относительный рост к&nbsp;апрелю. SEO и&nbsp;тексты с&nbsp;AI.</p>
+                <p class="chart-foot" data-i18n="bb.foot">Только относительный рост к&nbsp;апрелю. SEO и&nbsp;тексты с&nbsp;AI.</p>
               </div>
             </div>
           </article>
 
           <article class="case case--stack" id="prototip">
             <div class="case-copy">
-              <span class="tag">Кейс 03 · Вайбкодинг</span>
-              <h3>«Лоты в&nbsp;пути»: кликабельный прототип сложного UX без&nbsp;привлечения разработки</h3>
+              <span class="tag" data-i18n="pr.tag">Кейс 03 · Вайбкодинг</span>
+              <h3 data-i18n="pr.h3">«Лоты в&nbsp;пути»: кликабельный прототип сложного UX без&nbsp;привлечения разработки</h3>
               <div class="meta-row">
-                <span>HTML/CSS/JS · GitHub Pages</span>
+                <span data-i18n="pr.meta">HTML/CSS/JS · GitHub Pages</span>
               </div>
               <ul>
-                <li>
+                <li data-i18n="pr.li1">
                   <b>Продуктовая задача.</b> Снизить риск ошибки при&nbsp;запуске нового логистического флоу.
                   Бэкенд и&nbsp;продакшен-дизайн стоят дорого, поэтому механику обкатала «вживую» ещё на&nbsp;этапе
                   гипотезы.
                 </li>
-                <li>
+                <li data-i18n="pr.li2">
                   <b>Что сделала.</b> Самостоятельно собрала рабочую модель через AI-вайбкодинг. Стейкхолдеры
                   прокликали путь клиента: от&nbsp;карточки лота (карта и&nbsp;ETA на&nbsp;первом слое) до&nbsp;корзины
                   и&nbsp;экрана трекинга.
                 </li>
-                <li>
+                <li data-i18n="pr.li3">
                   <b>Результат.</b> Команда сверяется вокруг живого интерфейса. Дальше&nbsp;— короткий discovery
                   с&nbsp;лояльными клиентами; в&nbsp;разработку уходит проверенное ТЗ, а&nbsp;не&nbsp;сырая логика.
                 </li>
               </ul>
               <p>
-                <a href="https://lidee4ka.github.io/beanabox-lot-v-puti/" target="_blank" rel="noreferrer"
+                <a
+                  href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="pr.open"
                   >Открыть прототип</a
                 >
               </p>
@@ -335,6 +399,7 @@
               <img
                 src="./sites/lot-v-puti.jpg"
                 alt="Кликабельный прототип «Лоты в&nbsp;пути»: каталог, баннер на&nbsp;карте и&nbsp;трекинг лота"
+                data-i18n-alt="pr.alt"
               />
             </figure>
           </article>
@@ -344,8 +409,8 @@
       <section class="section" id="behance">
         <div class="wrap">
           <div class="section-head">
-            <h2>Дизайн лендингов в&nbsp;Figma</h2>
-            <p class="muted">
+            <h2 data-i18n="bh.title">Дизайн лендингов в&nbsp;Figma</h2>
+            <p class="muted" data-i18n="bh.sub">
               Концепты на&nbsp;Behance
               <a class="ext-link" href="https://www.behance.net/lidee4ka" target="_blank" rel="noreferrer"
                 >Профиль lidee4ka<span class="ext-arrow" aria-hidden="true">↗</span></a
@@ -355,11 +420,15 @@
           <div class="site-grid">
             <article class="card site-card behance-card">
               <button type="button" class="lightbox-trigger" data-lightbox="./behance/rzeka.jpg">
-                <img src="./behance/rzeka.jpg" alt="Концепт rzeka: адаптивный сайт IT-компании" />
+                <img
+                  src="./behance/rzeka.jpg"
+                  alt="Концепт rzeka: адаптивный сайт IT-компании"
+                  data-i18n-alt="rzeka.alt"
+                />
               </button>
               <div class="site-card-body">
                 <h3>rzeka</h3>
-                <p class="muted">Адаптивный концепт IT-компании: чистый UI/UX, сетка и&nbsp;айдентика</p>
+                <p class="muted" data-i18n="rzeka.p">Адаптивный концепт IT-компании: чистый UI/UX, сетка и&nbsp;айдентика</p>
                 <a
                   class="ext-link"
                   href="https://www.behance.net/gallery/171759369/Responsive-webdesign-concept-for-an-IT-company"
@@ -371,11 +440,11 @@
             </article>
             <article class="card site-card behance-card">
               <button type="button" class="lightbox-trigger" data-lightbox="./behance/fish-farming.jpg">
-                <img src="./behance/fish-farming.jpg" alt="Концепт лендинга Fish Farming" />
+                <img src="./behance/fish-farming.jpg" alt="Концепт лендинга Fish Farming" data-i18n-alt="fish.alt" />
               </button>
               <div class="site-card-body">
                 <h3>Fish Farming</h3>
-                <p class="muted">B2B-лендинг: навигация, блоки доверия, путь к&nbsp;заявке</p>
+                <p class="muted" data-i18n="fish.p">B2B-лендинг: навигация, блоки доверия, путь к&nbsp;заявке</p>
                 <a
                   class="ext-link"
                   href="https://www.behance.net/gallery/163622703/Landing-Page-Design-concept"
@@ -387,11 +456,15 @@
             </article>
             <article class="card site-card behance-card">
               <button type="button" class="lightbox-trigger" data-lightbox="./behance/holoway.jpg">
-                <img src="./behance/holoway.jpg" alt="Редизайн лендинга Holoway Analytics" />
+                <img
+                  src="./behance/holoway.jpg"
+                  alt="Редизайн лендинга Holoway Analytics"
+                  data-i18n-alt="holo.alt"
+                />
               </button>
               <div class="site-card-body">
                 <h3>Holoway Analytics</h3>
-                <p class="muted">Редизайн лендинга, desktop и&nbsp;mobile</p>
+                <p class="muted" data-i18n="holo.p">Редизайн лендинга, desktop и&nbsp;mobile</p>
                 <a
                   class="ext-link"
                   href="https://www.behance.net/gallery/163406243/Landing-page-redesign-concept-for-Holoway-Analytics"
@@ -408,43 +481,43 @@
       <section class="section" id="sajty">
         <div class="wrap">
           <div class="section-head">
-            <h2>Живые сайты</h2>
-            <p class="muted">Tilda и&nbsp;Wfolio: тексты и&nbsp;SEO собираю с&nbsp;AI, затем шлифую тон</p>
+            <h2 data-i18n="sites.title">Живые сайты</h2>
+            <p class="muted" data-i18n="sites.sub">Tilda и&nbsp;Wfolio: тексты и&nbsp;SEO собираю с&nbsp;AI, затем шлифую тон</p>
           </div>
           <div class="site-grid">
             <a class="card site-card" href="https://beanabox.ru/" target="_blank" rel="noreferrer">
-              <img src="./sites/beanabox.jpg" alt="Главный экран beanabox.ru" />
+              <img src="./sites/beanabox.jpg" alt="Главный экран beanabox.ru" data-i18n-alt="beanabox.alt" />
               <div class="site-card-body">
                 <h3>beanabox.ru</h3>
-                <p class="muted">B2B-витрина: сегменты, заявка, каталог в&nbsp;Telegram, SEO</p>
+                <p class="muted" data-i18n="beanabox.p">B2B-витрина: сегменты, заявка, каталог в&nbsp;Telegram, SEO</p>
               </div>
             </a>
             <a class="card site-card" href="https://altaytrip.ru/" target="_blank" rel="noreferrer">
-              <img src="./sites/altaytrip.jpg" alt="Главный экран altaytrip.ru" />
+              <img src="./sites/altaytrip.jpg" alt="Главный экран altaytrip.ru" data-i18n-alt="altay.alt" />
               <div class="site-card-body">
                 <h3>altaytrip.ru</h3>
-                <p class="muted">Outdoor на&nbsp;Алтае: событие, FAQ, отзывы, понятный CTA</p>
+                <p class="muted" data-i18n="altay.p">Outdoor на&nbsp;Алтае: событие, FAQ, отзывы, понятный CTA</p>
               </div>
             </a>
             <a class="card site-card" href="https://marikosheleva.ru/" target="_blank" rel="noreferrer">
-              <img src="./sites/marikosheleva.jpg" alt="Главный экран marikosheleva.ru" />
+              <img src="./sites/marikosheleva.jpg" alt="Главный экран marikosheleva.ru" data-i18n-alt="mari.alt" />
               <div class="site-card-body">
                 <h3>marikosheleva.ru</h3>
-                <p class="muted">Сайт психолога: тон, доверие, форматы, длинный текст</p>
+                <p class="muted" data-i18n="mari.p">Сайт психолога: тон, доверие, форматы, длинный текст</p>
               </div>
             </a>
             <a class="card site-card" href="https://egorovaphoto.com/" target="_blank" rel="noreferrer">
-              <img src="./sites/egorovaphoto.jpg" alt="Главный экран egorovaphoto.com" />
+              <img src="./sites/egorovaphoto.jpg" alt="Главный экран egorovaphoto.com" data-i18n-alt="ego.alt" />
               <div class="site-card-body">
                 <h3>egorovaphoto.com</h3>
-                <p class="muted">Портфолио фотографа: ритм, заявка, личный бренд</p>
+                <p class="muted" data-i18n="ego.p">Портфолио фотографа: ритм, заявка, личный бренд</p>
               </div>
             </a>
             <a class="card site-card" href="https://nattulev.wfolio.pro" target="_blank" rel="noreferrer">
-              <img src="./sites/nattulev.jpg" alt="Главный экран nattulev.wfolio.pro" />
+              <img src="./sites/nattulev.jpg" alt="Главный экран nattulev.wfolio.pro" data-i18n-alt="natt.alt" />
               <div class="site-card-body">
                 <h3>nattulev.wfolio.pro</h3>
-                <p class="muted">Wfolio · портретист: галерея, пакеты, отзывы, контакты</p>
+                <p class="muted" data-i18n="natt.p">Wfolio · портретист: галерея, пакеты, отзывы, контакты</p>
               </div>
             </a>
           </div>
@@ -454,21 +527,21 @@
       <section class="section" id="ai">
         <div class="wrap">
           <div class="section-head">
-            <h2>Как я&nbsp;работаю с&nbsp;AI</h2>
-            <p class="muted">Стандартный рабочий процесс: гипотеза → прототип → правка руками</p>
+            <h2 data-i18n="ai.title">Как я&nbsp;работаю с&nbsp;AI</h2>
+            <p class="muted" data-i18n="ai.sub">Стандартный рабочий процесс: гипотеза → прототип → правка руками</p>
           </div>
           <div class="reason-grid">
             <article class="card">
-              <h3>Вайбкодинг прототипов</h3>
-              <p>
+              <h3 data-i18n="ai.1.title">Вайбкодинг прототипов</h3>
+              <p data-i18n="ai.1.body">
                 Генерирую HTML/CSS/JS для&nbsp;проверки гипотез и&nbsp;публикую на&nbsp;GitHub Pages: «Лоты в&nbsp;пути»,
                 эта страница. Если вёрстка ломается&nbsp;— прошу AI объяснить причину, разбираюсь в&nbsp;тегах
                 и&nbsp;правлю. Для&nbsp;постов собираю HTML и&nbsp;вставляю в&nbsp;HTML-блоки Figma.
               </p>
             </article>
             <article class="card">
-              <h3>Контент и&nbsp;SEO</h3>
-              <p>
+              <h3 data-i18n="ai.2.title">Контент и&nbsp;SEO</h3>
+              <p data-i18n="ai.2.body">
                 LLM помогает с&nbsp;маркетинговыми текстами, SEO-структурой и&nbsp;HTML-постами. На&nbsp;английском
                 пишу UI-тексты и&nbsp;офферы, читаю документацию к&nbsp;API и&nbsp;инструментам. Задаю факты,
                 структуру и&nbsp;tone of voice, затем шлифую. Это резюме тоже собрано так.
@@ -481,38 +554,38 @@
       <section class="section" id="opyt">
         <div class="wrap">
           <div class="section-head">
-            <h2>Опыт</h2>
-            <p class="muted">То, что можно проверить по&nbsp;LinkedIn и&nbsp;живым ссылкам</p>
+            <h2 data-i18n="exp.title">Опыт</h2>
+            <p class="muted" data-i18n="exp.sub">То, что можно проверить по&nbsp;LinkedIn и&nbsp;живым ссылкам</p>
           </div>
           <div class="timeline">
             <article class="job">
               <div>
-                <div class="when">2024–н.&nbsp;в.</div>
-                <p class="muted">ООО «Чебоко»</p>
+                <div class="when" data-i18n="exp.bb.when">2024–н.&nbsp;в.</div>
+                <p class="muted" data-i18n="exp.bb.co">ООО «Чебоко»</p>
               </div>
               <div>
-                <h3>Product Manager&nbsp;/ Project Lead · BEANABOX</h3>
-                <p>B2B-маркетплейс: потребности клиентов, разработка, логистика, lean-рост витрины</p>
-              </div>
-            </article>
-            <article class="job">
-              <div>
-                <div class="when">окт&nbsp;2024&nbsp;— авг&nbsp;2025</div>
-                <p class="muted">ООО «ТурГений»</p>
-              </div>
-              <div>
-                <h3>Product &amp; Delivery Lead · UX/UI</h3>
-                <p>Zero-to-one платформа outdoor-событий: CustDev, интерфейсы, матричная команда до&nbsp;MVP</p>
+                <h3 data-i18n="exp.bb.h3">Product Manager&nbsp;/ Project Lead · BEANABOX</h3>
+                <p data-i18n="exp.bb.p">B2B-маркетплейс: потребности клиентов, разработка, логистика, lean-рост витрины</p>
               </div>
             </article>
             <article class="job">
               <div>
-                <div class="when">многолетний опыт</div>
+                <div class="when" data-i18n="exp.tg.when">окт&nbsp;2024&nbsp;— авг&nbsp;2025</div>
+                <p class="muted" data-i18n="exp.tg.co">ООО «ТурГений»</p>
+              </div>
+              <div>
+                <h3 data-i18n="exp.tg.h3">Product &amp; Delivery Lead · UX/UI</h3>
+                <p data-i18n="exp.tg.p">Zero-to-one платформа outdoor-событий: CustDev, интерфейсы, матричная команда до&nbsp;MVP</p>
+              </div>
+            </article>
+            <article class="job">
+              <div>
+                <div class="when" data-i18n="exp.rs.when">многолетний опыт</div>
                 <p class="muted">RuSoft</p>
               </div>
               <div>
-                <h3>Product Owner&nbsp;/ Project Manager</h3>
-                <p>
+                <h3 data-i18n="exp.rs.h3">Product Owner&nbsp;/ Project Manager</h3>
+                <p data-i18n="exp.rs.p">
                   Команды до&nbsp;15&nbsp;человек, внутренние продукты, ТЗ. Победитель «Менеджер года» по&nbsp;KPI продаж
                   и&nbsp;клиентской базы.
                 </p>
@@ -525,33 +598,33 @@
       <section class="section" id="obrazovanie">
         <div class="wrap">
           <div class="section-head">
-            <h2>Образование</h2>
+            <h2 data-i18n="edu.title">Образование</h2>
           </div>
           <div class="edu-grid">
             <article class="card">
               <p class="when">2023–2024</p>
               <h3>Skillbox · Product Management</h3>
-              <p>Метрики, Agile, CustDev, запуск</p>
+              <p data-i18n="edu.sb.pm">Метрики, Agile, CustDev, запуск</p>
             </article>
             <article class="card">
               <p class="when">2024</p>
               <h3>Skillbox · Digital Product Design</h3>
-              <p>UX/UI, CJM, продуктовый дизайн</p>
+              <p data-i18n="edu.sb.dpd">UX/UI, CJM, продуктовый дизайн</p>
             </article>
             <article class="card">
               <p class="when">2022–2023</p>
               <h3>Нетология</h3>
-              <p>Digital Design: веб-страницы и&nbsp;информационные ресурсы</p>
+              <p data-i18n="edu.net">Digital Design: веб-страницы и&nbsp;информационные ресурсы</p>
             </article>
             <article class="card">
               <p class="when">2021–2022</p>
               <h3>SKAENG · QA</h3>
-              <p>Инженер по&nbsp;качеству, тестирование интерфейсов</p>
+              <p data-i18n="edu.ska">Инженер по&nbsp;качеству, тестирование интерфейсов</p>
             </article>
             <article class="card">
               <p class="when">2000–2005</p>
-              <h3>ЯрГУ им.&nbsp;П.&nbsp;Г.&nbsp;Демидова</h3>
-              <p>Специалист, высшее</p>
+              <h3 data-i18n="edu.ysu">ЯрГУ им.&nbsp;П.&nbsp;Г.&nbsp;Демидова</h3>
+              <p data-i18n="edu.ysu.p">Специалист, высшее</p>
             </article>
           </div>
         </div>
@@ -561,8 +634,8 @@
         <div class="wrap">
           <div class="contacts">
             <div>
-              <h2>Связаться</h2>
-              <p>
+              <h2 data-i18n="ct.title">Связаться</h2>
+              <p data-i18n="ct.body">
                 Ищу full-time вовлечение в&nbsp;один продукт. Нужен продакт, который сам соберёт кликабельный
                 прототип и&nbsp;проверит гипотезу до&nbsp;разработки? Напишите&nbsp;— покажу скорость на&nbsp;вашей
                 задаче. Готова к&nbsp;короткому тестовому.
@@ -571,17 +644,17 @@
                 <a class="btn btn-primary" href="https://t.me/LidaMialkina" target="_blank" rel="noreferrer"
                   >Telegram</a
                 >
-                <a class="btn btn-ghost" href="mailto:lv@mialkina.ru">Почта</a>
+                <a class="btn btn-ghost" href="mailto:lv@mialkina.ru" data-i18n="ct.mailBtn">Почта</a>
               </p>
             </div>
             <div>
-              <p><b>Почта</b><br /><a href="mailto:lv@mialkina.ru">lv@mialkina.ru</a></p>
+              <p><b data-i18n="ct.mail">Почта</b><br /><a href="mailto:lv@mialkina.ru">lv@mialkina.ru</a></p>
               <p>
-                <b>Telegram</b><br />
+                <b data-i18n="ct.tg">Telegram</b><br />
                 <a href="https://t.me/LidaMialkina">@LidaMialkina</a>
               </p>
               <p>
-                <b>Профили</b><br />
+                <b data-i18n="ct.profiles">Профили</b><br />
                 <a href="https://www.linkedin.com/in/lidiia-mialkina/">LinkedIn</a><br />
                 <a href="https://www.behance.net/lidee4ka">Behance</a>
               </p>
@@ -593,19 +666,19 @@
 
     <footer class="site-footer">
       <div class="wrap">
-        <span>Лидия Мялкина · Product Manager</span>
+        <span data-i18n="foot.role">Лидия Мялкина · Product Manager</span>
         <p class="slogan">«ЛУНА&nbsp;— ТВЁРДАЯ» <cite>©&nbsp;С.&nbsp;Королёв</cite></p>
-        <span>Ярославль · 2026</span>
+        <span data-i18n="foot.place">Ярославль · 2026</span>
       </div>
     </footer>
-    <a class="to-top" href="#hero">Наверх</a>
+    <a class="to-top" href="#hero" data-i18n="top">Наверх</a>
     <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
       <div class="lightbox-bar">
-        <p class="lightbox-title" id="lightbox-title">Просмотр макета</p>
+        <p class="lightbox-title" id="lightbox-title" data-i18n="lb.title">Просмотр макета</p>
         <div class="lightbox-actions">
-          <button type="button" data-zoom-out aria-label="Уменьшить">−</button>
-          <button type="button" data-zoom-in aria-label="Приблизить">+</button>
-          <button type="button" data-close aria-label="Закрыть">✕</button>
+          <button type="button" data-zoom-out aria-label="Уменьшить" data-i18n-aria="lb.zoomOut">−</button>
+          <button type="button" data-zoom-in aria-label="Приблизить" data-i18n-aria="lb.zoomIn">+</button>
+          <button type="button" data-close aria-label="Закрыть" data-i18n-aria="lb.close">✕</button>
         </div>
       </div>
       <div class="lightbox-stage">
