@@ -79,8 +79,8 @@
         </nav>
         <div class="header-actions">
           <nav class="lang-switch" aria-label="Language" data-i18n-aria="lang.label">
-            <a href="../" hreflang="ru" lang="ru">RU</a>
-            <a href="./" hreflang="en" lang="en" aria-current="page">EN</a>
+            <a href="../" hreflang="ru" lang="ru" data-lang-path="ru">RU</a>
+            <a href="./" hreflang="en" lang="en" data-lang-path="en" aria-current="page">EN</a>
           </nav>
           <a class="btn btn-primary" href="#kontakty" data-i18n="cta.contact">Get in touch</a>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu" data-i18n-aria="nav.menu">
@@ -142,29 +142,40 @@
             <h2 data-i18n="cases.title">Case studies</h2>
           </div>
 
-          <article class="case case--stack" id="prototip">
+          <article class="case case--stack case--vibe" id="prototip">
             <div class="case-copy">
-              <span class="tag" data-i18n="pr.tag">Case 01 · Vibe-coding</span>
-              <h3 data-i18n="pr.h3">“Lots in&nbsp;transit”: aligned complex UX in&nbsp;2&nbsp;days before engineering</h3>
-              <div class="meta-row">
-                <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages · ~2&nbsp;working days</span>
+              <div class="case-head">
+                <div class="case-head-main">
+                  <span class="tag" data-i18n="pr.tag">Case 01 · Vibe-coding</span>
+                  <h3 data-i18n="pr.h3">“Lots in&nbsp;transit”: aligned complex UX in&nbsp;2&nbsp;days before engineering</h3>
+                </div>
+                <div class="case-head-side">
+                  <div class="meta-row">
+                    <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages · ~2&nbsp;working days</span>
+                  </div>
+                </div>
               </div>
-              <ul>
-                <li data-i18n="pr.li1">
-                  <b>Problem.</b> The team had not approved mockups for a&nbsp;new logistics flow&nbsp;— map, ETA, and cart
-                  hierarchy was contested. Handing a&nbsp;raw spec to&nbsp;engineering meant a&nbsp;high redo risk</li>
-                <li data-i18n="pr.li2">
-                  <b>What I&nbsp;did as&nbsp;PM.</b> In&nbsp;~2&nbsp;working days I&nbsp;built a&nbsp;clickable prototype
+              <div class="case-triad">
+                <div class="case-col" data-i18n="pr.li1">
+                  <b>Problem</b>
+                  <p>The team had not approved mockups for a&nbsp;new logistics flow&nbsp;— map, ETA, and cart
+                  hierarchy was contested. Handing a&nbsp;raw spec to&nbsp;engineering meant a&nbsp;high redo risk</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li2">
+                  <b>Solution</b>
+                  <p>In&nbsp;~2&nbsp;working days I&nbsp;built a&nbsp;clickable prototype
                   in&nbsp;Cursor (HTML/CSS/JS) so&nbsp;the team could click through the path before development.
                   Consciously in&nbsp;scope: map, ETA as&nbsp;forecast, tracking from cart. Cut: Yandex map underlay,
-                  third-party ports, fullscreen by&nbsp;default. A&nbsp;prototype for validation, not a&nbsp;production release</li>
-                <li data-i18n="pr.li3">
-                  <b>Outcome.</b> Stakeholders walked from lot card to&nbsp;tracking on&nbsp;a&nbsp;live prototype.
+                  third-party ports, fullscreen by&nbsp;default. A&nbsp;prototype for validation, not a&nbsp;production release</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li3">
+                  <b>Outcome</b>
+                  <p>Stakeholders walked from lot card to&nbsp;tracking on&nbsp;a&nbsp;live prototype.
                   I&nbsp;aligned the hierarchy <b>before</b> engineering started&nbsp;— they got a&nbsp;tested spec,
                   not a&nbsp;raw hypothesis. <b>Cut the UX alignment cycle from ~2&nbsp;weeks (mockups and meetings)
-                  to&nbsp;2&nbsp;days</b>
-                </li>
-              </ul>
+                  to&nbsp;2&nbsp;days</b></p>
+                </div>
+              </div>
               <p>
                 <a
                   href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
@@ -183,29 +194,41 @@
             </figure>
           </article>
 
-          <article class="case case--stack" id="catalog-redesign">
+          <article class="case case--stack case--vibe" id="catalog-redesign">
             <div class="case-copy">
-              <span class="tag" data-i18n="cr.tag">Case 02 · Vibe-coding</span>
-              <h3 data-i18n="cr.h3">Catalog redesign: a&nbsp;self-serve buying prototype in&nbsp;~15&nbsp;hours</h3>
-              <div class="meta-row">
-                <span data-i18n="cr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
-                <span data-i18n="cr.when">BEANABOX · Sep 2026 · 8&nbsp;iterations in&nbsp;2&nbsp;days</span>
+              <div class="case-head">
+                <div class="case-head-main">
+                  <span class="tag" data-i18n="cr.tag">Case 02 · Vibe-coding</span>
+                  <h3 data-i18n="cr.h3">Catalog redesign: a&nbsp;self-serve buying prototype in&nbsp;~15&nbsp;hours</h3>
+                </div>
+                <div class="case-head-side">
+                  <div class="meta-row">
+                    <span data-i18n="cr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
+                    <span data-i18n="cr.when">BEANABOX · Sep 2026 · 8&nbsp;iterations in&nbsp;2&nbsp;days</span>
+                  </div>
+                </div>
               </div>
-              <ul>
-                <li data-i18n="cr.li1">
-                  <b>Problem.</b> The price list did not work as&nbsp;a&nbsp;catalog: buyers could not find green coffee
+              <div class="case-triad">
+                <div class="case-col" data-i18n="cr.li1">
+                  <b>Problem</b>
+                  <p>The price list did not work as&nbsp;a&nbsp;catalog: buyers could not find green coffee
                   for&nbsp;their needs alone, and every order needed a&nbsp;manager. Goal: raise self-serve orders
-                  from 10–20% to&nbsp;30–40%</li>
-                <li data-i18n="cr.li2">
-                  <b>What I&nbsp;did as&nbsp;PM.</b> Framed JTBD and a&nbsp;hypothesis for a&nbsp;new catalog structure,
+                  from 10–20% to&nbsp;30–40%</p>
+                </div>
+                <div class="case-col" data-i18n="cr.li2">
+                  <b>Solution</b>
+                  <p>Framed JTBD and a&nbsp;hypothesis for a&nbsp;new catalog structure,
                   then in&nbsp;~15&nbsp;active hours built a&nbsp;clickable prototype in&nbsp;Cursor&nbsp;—
                   8&nbsp;iterations: shelves on&nbsp;the left, filter chips, sticky tools, denser lot cards with cart.
-                  Goal: validate UX myself without waiting on&nbsp;external engineering</li>
-                <li data-i18n="cr.li3">
-                  <b>Outcome.</b> Prototype ready for testing with 5–7 buyers.
+                  Goal: validate UX myself without waiting on&nbsp;external engineering</p>
+                </div>
+                <div class="case-col" data-i18n="cr.li3">
+                  <b>Outcome</b>
+                  <p>Prototype ready for testing with 5–7 buyers.
                   <b>Success criterion: 5&nbsp;of&nbsp;7 complete a&nbsp;typical order without a&nbsp;manager.</b>
-                  Engineering will get an&nbsp;aligned scenario and&nbsp;spec&nbsp;— not a&nbsp;raw hypothesis</li>
-              </ul>
+                  Engineering will get an&nbsp;aligned scenario and&nbsp;spec&nbsp;— not a&nbsp;raw hypothesis</p>
+                </div>
+              </div>
               <p>
                 <a
                   href="https://lidee4ka.github.io/beanabox-catalog-redesign/"
