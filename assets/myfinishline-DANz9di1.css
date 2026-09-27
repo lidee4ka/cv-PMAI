@@ -52,6 +52,18 @@ a:hover{color:var(--navy-ink)}
 h1,h2,h3,.section h2,.case-copy h3,.card h3,.letter h3,.reply h3,.site-card h3,.slogan,.brand b,.contacts h2{
   color:#1a1c1f;font-weight:500;
 }
+h3,.case-copy h3,.card h3,.site-card h3{
+  line-height:1.18;
+  margin-top:0;
+  margin-bottom:.35em;
+}
+.case-sub{
+  color:#6b7280;
+  font-size:1.05rem;
+  font-weight:500;
+  line-height:1.35;
+  margin:0 0 .6em;
+}
 
 .tag,.num,.infographic-kicker,.reply .label,.hero-card dt,.when,.meta-row,.muted,.chart-foot,.phones-caption,.case-metrics span,.chart-name{color:var(--muted)}
 .tag,.kicker,.hero-card dt,.infographic-kicker,.reply .label{text-transform:none !important;letter-spacing:.02em}
@@ -163,7 +175,8 @@ aside .hero-card,.hero-card,article,article.card,article.case,article.job,articl
 /* Vibe triad layout */
 .case--vibe .case-head{display:grid;grid-template-columns:2fr 1fr;gap:16px 24px;align-items:start;margin-bottom:20px}
 .case--vibe .case-head-main .tag{display:inline-block;margin-bottom:6px}
-.case--vibe .case-head-main h3{margin:0}
+.case--vibe .case-head-main h3{margin:0 0 .25em}
+.case--vibe .case-head-main .case-sub{margin:0}
 .case--vibe .case-head-side .meta-row{margin:0;flex-direction:column;align-items:flex-start;gap:6px}
 .case--vibe .case-triad{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 16px}
 .case--vibe .case-col{background:rgba(255,255,255,.65);border-radius:10px;padding:14px 16px}
