@@ -141,69 +141,73 @@
           <div class="section-head">
             <h2 data-i18n="cases.title">Case studies</h2>
           </div>
+        </div>
 
-          <article class="case case--stack case--vibe" id="prototip">
+                <div class="cases-group cases-group--solutions">
+          <div class="wrap cases-group-body">
+          <div class="cases-group-head">
+            <h3 class="cases-group-title">Solutions &amp; prototypes</h3>
+            <div class="cases-nav-group" role="group" aria-label="Scroll cases">
+              <button type="button" class="cases-nav cases-nav--prev" aria-label="Previous case">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button type="button" class="cases-nav cases-nav--next" aria-label="Next case">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+          <div class="cases-rail" tabindex="0" aria-label="Solutions and prototypes">
+              <div class="cases-track">
+<article class="case case--stack case--vibe" id="pixeltools">
             <div class="case-copy">
               <div class="case-head">
                 <div class="case-head-main">
-                  <span class="tag" data-i18n="pr.tag">Case 01 · Vibe-coding</span>
-                  <h3 data-i18n="pr.h3">Logic and prototype of&nbsp;the “Lot in&nbsp;transit” module</h3>
-                  <p class="case-sub" data-i18n="pr.sub">UX alignment cycle cut from ~2&nbsp;weeks to&nbsp;2&nbsp;days</p>
+                  <span class="tag">Test assignment · Pixel Plus</span>
+                  <h3>CJM, blockers, and&nbsp;a&nbsp;spec for&nbsp;AI Pixel Tools</h3>
+                  <p class="case-sub">One fix before Create: the prompts → auto-competitors chain</p>
                 </div>
                 <div class="case-head-side">
-                  <div class="meta-row">
-                    <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages · ~2&nbsp;working days</span>
+                  <div class="meta-row meta-row--role">
+                    <span>CJM · JTBD · RICE · Cursor</span>
+                    <span>28–29&nbsp;Sep 2026</span>
                   </div>
                 </div>
               </div>
               <div class="case-triad">
-                <div class="case-col" data-i18n="pr.li1">
+                <div class="case-col">
                   <b>Problem</b>
-                  <p>The team had not approved mockups for a&nbsp;new logistics flow&nbsp;— map, ETA, and cart
-                  hierarchy was contested. Handing a&nbsp;raw spec to&nbsp;engineering meant a&nbsp;high redo risk</p>
+                  <p>On&nbsp;the curated-prompts screen a&nbsp;new user does not see that the query list drives auto-competitor selection and the audit baseline. First value arrives skewed&nbsp;— numbers are computed around the wrong competitive set</p>
                 </div>
-                <div class="case-col" data-i18n="pr.li2">
+                <div class="case-col">
                   <b>Solution</b>
-                  <p>In&nbsp;~2&nbsp;working days I&nbsp;built a&nbsp;clickable prototype
-                  in&nbsp;Cursor (HTML/CSS/JS) so&nbsp;the team could click through the path before development.
-                  Consciously in&nbsp;scope: map, ETA as&nbsp;forecast, tracking from cart. Cut: Yandex map underlay,
-                  third-party ports, fullscreen by&nbsp;default. A&nbsp;prototype for validation, not a&nbsp;production release</p>
+                  <p>In&nbsp;2&nbsp;days I&nbsp;built a&nbsp;CJM to&nbsp;first value, a&nbsp;blocker map prioritized with RICE, chose one improvement, and wrote a&nbsp;backlog spec plus a&nbsp;clickable as-is&nbsp;/ to-be prototype on&nbsp;Pixel Plus UI&nbsp;Kit tokens</p>
                 </div>
-                <div class="case-col" data-i18n="pr.li3">
+                <div class="case-col">
                   <b>Outcome</b>
-                  <p>Stakeholders walked from lot card to&nbsp;tracking on&nbsp;a&nbsp;live prototype.
-                  Aligned the hierarchy before engineering started&nbsp;— they got a&nbsp;tested spec,
-                  not a&nbsp;raw hypothesis. Cut the UX alignment cycle from ~2&nbsp;weeks (mockups and meetings)
-                  to&nbsp;2&nbsp;days</p>
+                  <p>A&nbsp;ready report for the backlog: focus&nbsp;— explain the prompts → auto-competitors / analytics chain before Create (RICE&nbsp;12.2). Prototype with a&nbsp;Now&nbsp;/ After toggle</p>
                 </div>
               </div>
               <p>
-                <a
-                  href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="pr.open"
-                  >Open the prototype</a>
+                <a href="https://lidee4ka.github.io/ai-pixeltools-cjm/" target="_blank" rel="noreferrer">Open the report and prototype</a>
               </p>
             </div>
             <figure class="case-shot case-shot--proto">
               <img
-                src="../sites/lot-v-puti.jpg"
-                alt="Clickable “Lots in transit” prototype: catalog, map banner, and lot tracking"
-                data-i18n-alt="pr.alt"
+                src="../sites/pixeltools-cjm.png"
+                alt="Pixel Plus test assignment: CJM and AI Pixel Tools spec — report header"
               />
             </figure>
           </article>
 
-          <article class="case case--stack case--vibe" id="catalog-redesign">
+<article class="case case--stack case--vibe" id="catalog-redesign">
             <div class="case-copy">
               <div class="case-head">
                 <div class="case-head-main">
-                  <span class="tag" data-i18n="cr.tag">Case 02 · Vibe-coding</span>
+                  <span class="tag" data-i18n="cr.tag">Vibe-coding · BEANABOX</span>
                   <h3 data-i18n="cr.h3">Buyer UX optimization for&nbsp;the Mini App catalog</h3>
                 </div>
                 <div class="case-head-side">
-                  <div class="meta-row">
+                  <div class="meta-row meta-row--role">
                     <span data-i18n="cr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
                     <span data-i18n="cr.when">BEANABOX · Sep 2026 · 8&nbsp;iterations in&nbsp;2&nbsp;days</span>
                   </div>
@@ -249,13 +253,87 @@
             </figure>
           </article>
 
-          <article class="case case--stack" id="beanabox">
+<article class="case case--stack case--vibe" id="prototip">
+            <div class="case-copy">
+              <div class="case-head">
+                <div class="case-head-main">
+                  <span class="tag" data-i18n="pr.tag">Vibe-coding · BEANABOX</span>
+                  <h3 data-i18n="pr.h3">Logic and prototype of&nbsp;the “Lot in&nbsp;transit” module</h3>
+                  <p class="case-sub" data-i18n="pr.sub">UX alignment cycle cut from ~2&nbsp;weeks to&nbsp;2&nbsp;days</p>
+                </div>
+                <div class="case-head-side">
+                  <div class="meta-row meta-row--role">
+                    <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
+                    <span data-i18n="pr.when">~2&nbsp;working days</span>
+                  </div>
+                </div>
+              </div>
+              <div class="case-triad">
+                <div class="case-col" data-i18n="pr.li1">
+                  <b>Problem</b>
+                  <p>The team had not approved mockups for a&nbsp;new logistics flow&nbsp;— map, ETA, and cart
+                  hierarchy was contested. Handing a&nbsp;raw spec to&nbsp;engineering meant a&nbsp;high redo risk</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li2">
+                  <b>Solution</b>
+                  <p>In&nbsp;~2&nbsp;working days I&nbsp;built a&nbsp;clickable prototype
+                  in&nbsp;Cursor (HTML/CSS/JS) so&nbsp;the team could click through the path before development.
+                  Consciously in&nbsp;scope: map, ETA as&nbsp;forecast, tracking from cart. Cut: Yandex map underlay,
+                  third-party ports, fullscreen by&nbsp;default. A&nbsp;prototype for validation, not a&nbsp;production release</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li3">
+                  <b>Outcome</b>
+                  <p>Stakeholders walked from lot card to&nbsp;tracking on&nbsp;a&nbsp;live prototype.
+                  Aligned the hierarchy before engineering started&nbsp;— they got a&nbsp;tested spec,
+                  not a&nbsp;raw hypothesis. Cut the UX alignment cycle from ~2&nbsp;weeks (mockups and meetings)
+                  to&nbsp;2&nbsp;days</p>
+                </div>
+              </div>
+              <p>
+                <a
+                  href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="pr.open"
+                  >Open the prototype</a>
+              </p>
+            </div>
+            <figure class="case-shot case-shot--proto">
+              <img
+                src="../sites/lot-v-puti.jpg"
+                alt="Clickable “Lots in transit” prototype: catalog, map banner, and lot tracking"
+                data-i18n-alt="pr.alt"
+              />
+            </figure>
+          </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cases-group">
+          <div class="wrap cases-group-body">
+          <div class="cases-group-head">
+            <h3 class="cases-group-title">Products</h3>
+            <div class="cases-nav-group" role="group" aria-label="Scroll products">
+              <button type="button" class="cases-nav cases-nav--prev" aria-label="Previous product">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button type="button" class="cases-nav cases-nav--next" aria-label="Next product">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+          <div class="cases-rail" tabindex="0" aria-label="Products">
+            <div class="cases-track">
+<article class="case case--stack" id="beanabox">
             <div class="case-body case-body--app">
               <div class="case-copy">
-                <span class="tag" data-i18n="bb.tag">Case 03 · BEANABOX</span>
-                <h3 data-i18n="bb.h3">B2B green-coffee marketplace</h3>
+                <span class="tag" data-i18n="bb.tag">BEANABOX</span>
+                <h3 data-i18n="bb.h3">B2B platform to&nbsp;buy and sell green coffee</h3>
                 <p class="case-sub" data-i18n="bb.sub">Lean growth of&nbsp;the storefront</p>
-                <div class="meta-row">
+                <div class="meta-row meta-row--role">
                   <span data-i18n="bb.role">Product Manager / Project Lead</span>
                   <span data-i18n="bb.dates">2024&nbsp;— present</span>
                   <span data-i18n="bb.co">Cheboko LLC</span>
@@ -283,15 +361,15 @@
               </div>
               <div class="phones" aria-hidden="true">
                 <img
-                  class="phone phone--bot"
-                  src="../sites/beanabox-phone-bot.webp"
+                  class="phone phone--app"
+                  src="../sites/beanabox-phone-catalog.webp"
                   alt=""
                   width="507"
                   height="920"
                 />
                 <img
-                  class="phone phone--app"
-                  src="../sites/beanabox-phone-catalog.webp"
+                  class="phone phone--bot"
+                  src="../sites/beanabox-phone-bot.webp"
                   alt=""
                   width="507"
                   height="920"
@@ -310,77 +388,68 @@
                   <li>
                     <span class="chart-name" data-i18n="bb.users">Mini-app user base</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 66%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 66%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
                     <strong>+52%</strong>
                   </li>
                   <li>
                     <span class="chart-name" data-i18n="bb.catalog">Catalog of lots</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 80%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 79%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
                     <strong>+26%</strong>
                   </li>
                   <li>
                     <span class="chart-name" data-i18n="bb.org">Organic traffic on the site</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 12%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 12%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
-                    <strong>×8,3</strong>
+                    <strong>×8.3</strong>
                   </li>
                 </ul>
-                <p class="chart-foot" data-i18n="bb.foot">Relative growth vs April only. SEO and copy with AI</p>
+                <p class="chart-foot" data-i18n="bb.foot">Gray bar&nbsp;— April, colored&nbsp;— August (vs period max). Relative growth vs&nbsp;April. SEO and copy with AI</p>
               </div>
             </div>
           </article>
 
-          <article class="case" id="tourgenius">
-            <div class="case-body">
-              <div class="case-copy">
-                <span class="tag" data-i18n="tg.tag">Case 04 · TourGenius</span>
-                <h3 data-i18n="tg.h3">Mini App: routes, events, onboarding</h3>
-                <div class="meta-row">
-                  <span data-i18n="tg.role">Product &amp; Delivery Lead + UX/UI</span>
-                  <span data-i18n="tg.months">11&nbsp;months</span>
-                  <span data-i18n="tg.dates">Oct 2024&nbsp;— Aug 2025</span>
-                </div>
-                <p data-i18n="tg.p">A&nbsp;platform to&nbsp;find and book local outdoor events in&nbsp;the Altai Republic</p>
-                <ul>
-                  <li data-i18n="tg.li1"><b>Research.</b> Ran 25+&nbsp;in-depth interviews, framed JTBD and built a&nbsp;CJM&nbsp;— found users drop off mid-route without intermediate motivation points</li>
-                  <li data-i18n="tg.li2"><b>Product decision.</b> Designed a&nbsp;15-screen gamified onboarding&nbsp;— <b>deliberately cut it from v1</b> to&nbsp;hit the MVP launch date</li>
-                  <li data-i18n="tg.li3"><b>UX/UI.</b> Designed Mini App architecture: search, filters, route map, catalog, booking</li>
-                  <li data-i18n="tg.li4"><b>Outcome.</b> A&nbsp;base of&nbsp;256&nbsp;events and 100&nbsp;nature locations. Took the product to&nbsp;a&nbsp;functional MVP with two remote engineering teams</li>
-                </ul>
-                <p>
-                  <a href="../files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf" data-i18n="tg.pdf"
-                    >Download the case presentation (PDF)</a>
-                </p>
+          
+<article class="case case--stack" id="tourgenius">
+            <div class="case-copy">
+              <span class="tag" data-i18n="tg.tag">TourGenius</span>
+              <h3 data-i18n="tg.h3">Telegram-first Travel Tech MVP</h3>
+              <div class="meta-row meta-row--role">
+                <span data-i18n="tg.role">Product &amp; Delivery Lead + UX/UI</span>
+                <span data-i18n="tg.months">11&nbsp;months</span>
+                <span data-i18n="tg.dates">Oct 2024&nbsp;— Aug 2025</span>
               </div>
-              <div class="case-visual case-visual--phone">
-                <img
-                  src="../cases/tourgenius-01.jpg"
-                  alt="TourGenius Mini App mockup: a place card in the feed"
-                  data-i18n-alt="tg.alt1"
-                />
-              </div>
+              <p data-i18n="tg.p">Telegram-first Travel Tech MVP: find and book local outdoor events in&nbsp;the Altai Republic</p>
+              <ul>
+                <li data-i18n="tg.li1"><b>Research.</b> Ran 25+&nbsp;in-depth interviews, framed JTBD and built a&nbsp;CJM&nbsp;— found users drop off without intermediate motivation points along the journey</li>
+                <li data-i18n="tg.li2"><b>Product decision.</b> Designed a&nbsp;15-screen gamified onboarding&nbsp;— <b>deliberately cut it from v1</b> to&nbsp;hit the MVP launch date</li>
+                <li data-i18n="tg.li3"><b>UX/UI.</b> Designed Mini App architecture: search, filters, catalog of&nbsp;events and locations, booking</li>
+                <li data-i18n="tg.li4"><b>Outcome.</b> A&nbsp;base of&nbsp;256&nbsp;events and 100&nbsp;nature locations. Took the product to&nbsp;a&nbsp;functional MVP with two remote engineering teams</li>
+              </ul>
+              <p>
+                <a href="../files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf" data-i18n="tg.pdf"
+                  >Download the case presentation (PDF)</a>
+              </p>
             </div>
-            <div class="slide-strip">
-              <img
-                src="../cases/tourgenius-02.jpg"
-                alt="TourGenius: product, problem, and solution"
-                data-i18n-alt="tg.alt2"
-              />
+            <div class="case-tiles" aria-label="TourGenius presentation screenshots">
+              <img src="../cases/tourgenius-01.jpg" alt="TourGenius Mini App mockup: a place card in the feed" data-i18n-alt="tg.alt1" />
+              <img src="../cases/tourgenius-02.jpg" alt="TourGenius: product, problem, and solution" data-i18n-alt="tg.alt2" />
               <img src="../cases/tourgenius-03.jpg" alt="TourGenius Mini App screens" data-i18n-alt="tg.alt3" />
-              <img
-                src="../cases/tourgenius-05.jpg"
-                alt="Areas of ownership and a zero-to-one approach"
-                data-i18n-alt="tg.alt4"
-              />
+              <img src="../cases/tourgenius-04.jpg" alt="TourGenius presentation slide" data-i18n-alt="tg.alt5" />
+              <img src="../cases/tourgenius-05.jpg" alt="Areas of ownership and a zero-to-one approach" data-i18n-alt="tg.alt4" />
+              <img src="../cases/tourgenius-06.jpg" alt="TourGenius presentation slide" data-i18n-alt="tg.alt6" />
             </div>
           </article>
+        
+            </div>
+          </div>
+          </div>
         </div>
       </section>
 
@@ -657,5 +726,50 @@
         <img alt="" />
       </div>
     </dialog>
-  </body>
+  
+  <script>
+    (function () {
+      document.querySelectorAll(".cases-group").forEach(function (group) {
+        var rail = group.querySelector(".cases-rail");
+        var nav = group.querySelector(".cases-nav-group");
+        var prev = group.querySelector(".cases-nav--prev");
+        var next = group.querySelector(".cases-nav--next");
+        if (!rail || !nav) return;
+        function step() {
+          var card = rail.querySelector(".case");
+          return (card ? card.getBoundingClientRect().width : 560) + 20;
+        }
+        function sync() {
+          var canScroll = rail.scrollWidth > rail.clientWidth + 2;
+          nav.hidden = !canScroll;
+          if (!canScroll) return;
+          var max = rail.scrollWidth - rail.clientWidth - 2;
+          if (prev) prev.disabled = rail.scrollLeft <= 2;
+          if (next) next.disabled = rail.scrollLeft >= max;
+        }
+        prev &&
+          prev.addEventListener("click", function () {
+            rail.scrollBy({ left: -step(), behavior: "smooth" });
+          });
+        next &&
+          next.addEventListener("click", function () {
+            rail.scrollBy({ left: step(), behavior: "smooth" });
+          });
+        rail.addEventListener("scroll", sync, { passive: true });
+        window.addEventListener("resize", sync);
+        if (window.ResizeObserver) {
+          new ResizeObserver(sync).observe(rail);
+          var track = rail.querySelector(".cases-track");
+          if (track) new ResizeObserver(sync).observe(track);
+        }
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(sync);
+        }
+        window.addEventListener("load", sync);
+        sync();
+      });
+    })();
+  </script>
+
+</body>
 </html>

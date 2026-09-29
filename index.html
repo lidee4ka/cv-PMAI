@@ -147,71 +147,73 @@
           <div class="section-head">
             <h2 data-i18n="cases.title">Кейсы</h2>
           </div>
+        </div>
 
-          <article class="case case--stack case--vibe" id="prototip">
+                <div class="cases-group cases-group--solutions">
+          <div class="wrap cases-group-body">
+          <div class="cases-group-head">
+            <h3 class="cases-group-title">Решения и&nbsp;прототипы</h3>
+            <div class="cases-nav-group" role="group" aria-label="Листать кейсы">
+              <button type="button" class="cases-nav cases-nav--prev" aria-label="Предыдущий кейс">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button type="button" class="cases-nav cases-nav--next" aria-label="Следующий кейс">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+          <div class="cases-rail" tabindex="0" aria-label="Решения и прототипы">
+              <div class="cases-track">
+<article class="case case--stack case--vibe" id="pixeltools">
             <div class="case-copy">
               <div class="case-head">
                 <div class="case-head-main">
-                  <span class="tag" data-i18n="pr.tag">Кейс 01 · Вайбкодинг</span>
-                  <h3 data-i18n="pr.h3">Логика и&nbsp;прототип модуля «Лот в&nbsp;пути»</h3>
-                  <p class="case-sub" data-i18n="pr.sub">Сокращён цикл согласования UX с&nbsp;~2&nbsp;недель до&nbsp;2&nbsp;дней</p>
+                  <span class="tag">Тестовое · Пиксель Плюс</span>
+                  <h3>CJM, блокеры и&nbsp;ТЗ для&nbsp;AI Пиксель Тулс</h3>
+                  <p class="case-sub">Одно улучшение до&nbsp;Create: цепочка «промпты → автоконкуренты»</p>
                 </div>
                 <div class="case-head-side">
-                  <div class="meta-row">
-                    <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages · ~2&nbsp;рабочих дня</span>
+                  <div class="meta-row meta-row--role">
+                    <span>CJM · JTBD · RICE · Cursor</span>
+                    <span>28–29&nbsp;сент 2026</span>
                   </div>
                 </div>
               </div>
               <div class="case-triad">
-                <div class="case-col" data-i18n="pr.li1">
+                <div class="case-col">
                   <b>Проблема</b>
-                  <p>Команда не&nbsp;утвердила макеты нового логистического флоу&nbsp;— иерархия карты,
-                  ETA и&nbsp;корзины вызывала споры. Отдавать сырое ТЗ в&nbsp;разработку означало риск переделок</p>
+                  <p>На&nbsp;экране подобранных промптов новый пользователь не&nbsp;видит, что список запросов задаёт автоподбор конкурентов и&nbsp;основу аудита. Первая польза приходит «кривой»&nbsp;— цифры считаются вокруг чужого поля</p>
                 </div>
-                <div class="case-col" data-i18n="pr.li2">
+                <div class="case-col">
                   <b>Решение</b>
-                  <p>За&nbsp;~2&nbsp;рабочих дня собрала кликабельный прототип
-                  в&nbsp;Cursor (HTML/CSS/JS), чтобы команда могла прокликать путь до&nbsp;разработки.
-                  В&nbsp;скоуп осознанно вошли: карта, ETA как прогноз, трекинг из&nbsp;корзины.
-                  Вырезала: подложку Яндекс.Карт, чужие порты, полноэкранный режим. Это прототип для&nbsp;проверки,
-                  не&nbsp;production-релиз</p>
+                  <p>За&nbsp;2&nbsp;дня собрала CJM пути до&nbsp;первой пользы, карту блокеров с&nbsp;приоритетами RICE, выбрала одно улучшение и&nbsp;оформила ТЗ плюс кликабельный прототип as-is&nbsp;/ to-be на&nbsp;токенах UI&nbsp;Kit Пиксель&nbsp;Плюс</p>
                 </div>
-                <div class="case-col" data-i18n="pr.li3">
+                <div class="case-col">
                   <b>Результат</b>
-                  <p>Стейкхолдеры прошли путь от&nbsp;карточки лота до&nbsp;трекинга на&nbsp;живом прототипе.
-                  Согласовала иерархию до&nbsp;старта разработки&nbsp;— в&nbsp;разработку ушло проверенное ТЗ,
-                  а&nbsp;не&nbsp;сырая гипотеза. Сократила цикл согласования UX с&nbsp;~2&nbsp;недель (макеты и&nbsp;встречи)
-                  до&nbsp;2&nbsp;дней</p>
+                  <p>Готовый отчёт для&nbsp;бэклога: фокус&nbsp;— объяснить цепочку «промпты → автоконкуренты / аналитика» до&nbsp;«Создать проект» (RICE&nbsp;12.2). Прототип с&nbsp;переключателем Сейчас&nbsp;/ После</p>
                 </div>
               </div>
               <p>
-                <a
-                  href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="pr.open"
-                  >Открыть прототип</a
-                >
+                <a href="https://lidee4ka.github.io/ai-pixeltools-cjm/" target="_blank" rel="noreferrer">Открыть отчёт и&nbsp;прототип</a>
               </p>
             </div>
             <figure class="case-shot case-shot--proto">
               <img
-                src="./sites/lot-v-puti.jpg"
-                alt="Кликабельный прототип «Лоты в&nbsp;пути»: каталог, баннер на&nbsp;карте и&nbsp;трекинг лота"
-                data-i18n-alt="pr.alt"
+                src="./sites/pixeltools-cjm.png"
+                alt="Тестовое Пиксель Плюс: CJM и ТЗ AI Пиксель Тулс — шапка отчёта"
               />
             </figure>
           </article>
 
-          <article class="case case--stack case--vibe" id="catalog-redesign">
+<article class="case case--stack case--vibe" id="catalog-redesign">
             <div class="case-copy">
               <div class="case-head">
                 <div class="case-head-main">
-                  <span class="tag" data-i18n="cr.tag">Кейс 02 · Вайбкодинг</span>
+                  <span class="tag" data-i18n="cr.tag">Вайбкодинг · BEANABOX</span>
                   <h3 data-i18n="cr.h3">Оптимизация UX работы Закупщика с&nbsp;каталогом в&nbsp;Mini-app</h3>
                 </div>
                 <div class="case-head-side">
-                  <div class="meta-row">
+                  <div class="meta-row meta-row--role">
                     <span data-i18n="cr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
                     <span data-i18n="cr.when">BEANABOX · сент 2026 · 8&nbsp;итераций за&nbsp;2&nbsp;дня</span>
                   </div>
@@ -257,13 +259,89 @@
             </figure>
           </article>
 
-          <article class="case case--stack" id="beanabox">
+<article class="case case--stack case--vibe" id="prototip">
+            <div class="case-copy">
+              <div class="case-head">
+                <div class="case-head-main">
+                  <span class="tag" data-i18n="pr.tag">Вайбкодинг · BEANABOX</span>
+                  <h3 data-i18n="pr.h3">Логика и&nbsp;прототип модуля «Лот в&nbsp;пути»</h3>
+                  <p class="case-sub" data-i18n="pr.sub">Сокращён цикл согласования UX с&nbsp;~2&nbsp;недель до&nbsp;2&nbsp;дней</p>
+                </div>
+                <div class="case-head-side">
+                  <div class="meta-row meta-row--role">
+                    <span data-i18n="pr.meta">Cursor · HTML/CSS/JS · GitHub Pages</span>
+                    <span data-i18n="pr.when">~2&nbsp;рабочих дня</span>
+                  </div>
+                </div>
+              </div>
+              <div class="case-triad">
+                <div class="case-col" data-i18n="pr.li1">
+                  <b>Проблема</b>
+                  <p>Команда не&nbsp;утвердила макеты нового логистического флоу&nbsp;— иерархия карты,
+                  ETA и&nbsp;корзины вызывала споры. Отдавать сырое ТЗ в&nbsp;разработку означало риск переделок</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li2">
+                  <b>Решение</b>
+                  <p>За&nbsp;~2&nbsp;рабочих дня собрала кликабельный прототип
+                  в&nbsp;Cursor (HTML/CSS/JS), чтобы команда могла прокликать путь до&nbsp;разработки.
+                  В&nbsp;скоуп осознанно вошли: карта, ETA как прогноз, трекинг из&nbsp;корзины.
+                  Вырезала: подложку Яндекс.Карт, чужие порты, полноэкранный режим. Это прототип для&nbsp;проверки,
+                  не&nbsp;production-релиз</p>
+                </div>
+                <div class="case-col" data-i18n="pr.li3">
+                  <b>Результат</b>
+                  <p>Стейкхолдеры прошли путь от&nbsp;карточки лота до&nbsp;трекинга на&nbsp;живом прототипе.
+                  Согласовала иерархию до&nbsp;старта разработки&nbsp;— в&nbsp;разработку ушло проверенное ТЗ,
+                  а&nbsp;не&nbsp;сырая гипотеза. Сократила цикл согласования UX с&nbsp;~2&nbsp;недель (макеты и&nbsp;встречи)
+                  до&nbsp;2&nbsp;дней</p>
+                </div>
+              </div>
+              <p>
+                <a
+                  href="https://lidee4ka.github.io/beanabox-lot-v-puti/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="pr.open"
+                  >Открыть прототип</a
+                >
+              </p>
+            </div>
+            <figure class="case-shot case-shot--proto">
+              <img
+                src="./sites/lot-v-puti.jpg"
+                alt="Кликабельный прототип «Лоты в&nbsp;пути»: каталог, баннер на&nbsp;карте и&nbsp;трекинг лота"
+                data-i18n-alt="pr.alt"
+              />
+            </figure>
+          </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cases-group">
+          <div class="wrap cases-group-body">
+          <div class="cases-group-head">
+            <h3 class="cases-group-title">Продукты</h3>
+            <div class="cases-nav-group" role="group" aria-label="Листать продукты">
+              <button type="button" class="cases-nav cases-nav--prev" aria-label="Предыдущий продукт">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button type="button" class="cases-nav cases-nav--next" aria-label="Следующий продукт">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+          </div>
+          <div class="cases-rail" tabindex="0" aria-label="Продукты">
+            <div class="cases-track">
+<article class="case case--stack" id="beanabox">
             <div class="case-body case-body--app">
               <div class="case-copy">
-                <span class="tag" data-i18n="bb.tag">Кейс 03 · BEANABOX</span>
-                <h3 data-i18n="bb.h3">B2B-маркетплейс зелёного кофе</h3>
+                <span class="tag" data-i18n="bb.tag">BEANABOX</span>
+                <h3 data-i18n="bb.h3">B2B-площадка покупки и&nbsp;продажи зелёного кофе</h3>
                 <p class="case-sub" data-i18n="bb.sub">Рост витрины lean-подходом</p>
-                <div class="meta-row">
+                <div class="meta-row meta-row--role">
                   <span data-i18n="bb.role">Product Manager / Project Lead</span>
                   <span data-i18n="bb.dates">2024&nbsp;— н.&nbsp;в.</span>
                   <span data-i18n="bb.co">ООО «Чебоко»</span>
@@ -291,15 +369,15 @@
               </div>
               <div class="phones" aria-hidden="true">
                 <img
-                  class="phone phone--bot"
-                  src="./sites/beanabox-phone-bot.webp"
+                  class="phone phone--app"
+                  src="./sites/beanabox-phone-catalog.webp"
                   alt=""
                   width="507"
                   height="920"
                 />
                 <img
-                  class="phone phone--app"
-                  src="./sites/beanabox-phone-catalog.webp"
+                  class="phone phone--bot"
+                  src="./sites/beanabox-phone-bot.webp"
                   alt=""
                   width="507"
                   height="920"
@@ -320,87 +398,78 @@
                   <li>
                     <span class="chart-name" data-i18n="bb.users">База mini-app</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 66%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 66%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
                     <strong>+52%</strong>
                   </li>
                   <li>
                     <span class="chart-name" data-i18n="bb.catalog">Каталог лотов</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 80%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 79%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
                     <strong>+26%</strong>
                   </li>
                   <li>
                     <span class="chart-name" data-i18n="bb.org">Органика на&nbsp;сайте</span>
                     <span class="chart-bars" aria-hidden="true">
-                      <span class="chart-bar chart-bar--from" style="--w: 12%"></span>
-                      <span class="chart-bar chart-bar--to" style="--w: 100%"></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--from" style="--w: 12%"></span></span>
+                      <span class="chart-bar-track"><span class="chart-bar chart-bar--to" style="--w: 100%"></span></span>
                     </span>
                     <strong>×8,3</strong>
                   </li>
                 </ul>
-                <p class="chart-foot" data-i18n="bb.foot">Только относительный рост к&nbsp;апрелю. SEO и&nbsp;тексты с&nbsp;AI</p>
+                <p class="chart-foot" data-i18n="bb.foot">Серая полоса&nbsp;— апрель, цветная&nbsp;— август (к&nbsp;максимуму периода). Рост относительный к&nbsp;апрелю. SEO и&nbsp;тексты с&nbsp;AI</p>
               </div>
             </div>
           </article>
 
-          <article class="case" id="tourgenius">
-            <div class="case-body">
-              <div class="case-copy">
-                <span class="tag" data-i18n="tg.tag">Кейс 04 · ТурГений</span>
-                <h3 data-i18n="tg.h3">Mini App: маршруты, события, онбординг</h3>
-                <div class="meta-row">
-                  <span data-i18n="tg.role">Product &amp; Delivery Lead + UX/UI</span>
-                  <span data-i18n="tg.months">11&nbsp;месяцев</span>
-                  <span data-i18n="tg.dates">окт 2024&nbsp;— авг 2025</span>
-                </div>
-                <p data-i18n="tg.p">
-                  Платформа для&nbsp;поиска и&nbsp;бронирования локальных событий на&nbsp;природе в&nbsp;Республике Алтай
-                </p>
-                <ul>
-                  <li data-i18n="tg.li1">
-                    <b>Исследования.</b> Провела 25+&nbsp;глубинных интервью, сформулировала JTBD и&nbsp;построила CJM&nbsp;—
-                    выявила, что&nbsp;пользователи бросают маршрут из-за отсутствия промежуточных точек мотивации</li>
-                  <li data-i18n="tg.li2">
-                    <b>Продуктовое решение.</b> Спроектировала геймифицированный онбординг из&nbsp;15&nbsp;экранов&nbsp;—
-                    <b>сознательно вырезала его из&nbsp;первой версии</b>, чтобы уложиться в&nbsp;срок запуска MVP</li>
-                  <li data-i18n="tg.li3">
-                    <b>UX/UI.</b> Спроектировала архитектуру Mini App: поиск, фильтры, карта маршрутов, каталог, бронирование</li>
-                  <li data-i18n="tg.li4">
-                    <b>Результат.</b> База из&nbsp;256&nbsp;событий и&nbsp;100&nbsp;природных локаций. Продукт доведён
-                    до&nbsp;функционального MVP двумя удалёнными командами</li>
-                </ul>
-                <p>
-                  <a href="./files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf" data-i18n="tg.pdf"
-                    >Скачать презентацию кейса (PDF)</a
-                  >
-                </p>
+          
+<article class="case case--stack" id="tourgenius">
+            <div class="case-copy">
+              <span class="tag" data-i18n="tg.tag">ТурГений</span>
+              <h3 data-i18n="tg.h3">Telegram-first Travel Tech MVP</h3>
+              <div class="meta-row meta-row--role">
+                <span data-i18n="tg.role">Product &amp; Delivery Lead + UX/UI</span>
+                <span data-i18n="tg.months">11&nbsp;месяцев</span>
+                <span data-i18n="tg.dates">окт 2024&nbsp;— авг 2025</span>
               </div>
-              <div class="case-visual case-visual--phone">
-                <img
-                  src="./cases/tourgenius-01.jpg"
-                  alt="Макет Mini App ТурГений: карточка места в&nbsp;ленте"
-                  data-i18n-alt="tg.alt1"
-                />
-              </div>
+              <p data-i18n="tg.p">
+                Telegram-first Travel Tech MVP: поиск и&nbsp;бронирование локальных событий на&nbsp;природе в&nbsp;Республике Алтай
+              </p>
+              <ul>
+                <li data-i18n="tg.li1">
+                  <b>Исследования.</b> Провела 25+&nbsp;глубинных интервью, сформулировала JTBD и&nbsp;построила CJM&nbsp;—
+                  выявила, что&nbsp;пользователи бросают путь без&nbsp;промежуточных точек мотивации</li>
+                <li data-i18n="tg.li2">
+                  <b>Продуктовое решение.</b> Спроектировала геймифицированный онбординг из&nbsp;15&nbsp;экранов&nbsp;—
+                  <b>сознательно вырезала его из&nbsp;первой версии</b>, чтобы уложиться в&nbsp;срок запуска MVP</li>
+                <li data-i18n="tg.li3">
+                  <b>UX/UI.</b> Спроектировала архитектуру Mini App: поиск, фильтры, каталог событий и&nbsp;локаций, бронирование</li>
+                <li data-i18n="tg.li4">
+                  <b>Результат.</b> База из&nbsp;256&nbsp;событий и&nbsp;100&nbsp;природных локаций. Продукт доведён
+                  до&nbsp;функционального MVP двумя удалёнными командами</li>
+              </ul>
+              <p>
+                <a href="./files/TourGenius_mvp_journey_presentation_Mialkina-LV.pdf" data-i18n="tg.pdf"
+                  >Скачать презентацию кейса (PDF)</a
+                >
+              </p>
             </div>
-            <div class="slide-strip">
-              <img
-                src="./cases/tourgenius-02.jpg"
-                alt="Продукт, проблема и&nbsp;решение ТурГения"
-                data-i18n-alt="tg.alt2"
-              />
+            <div class="case-tiles" aria-label="Скрины из презентации ТурГений">
+              <img src="./cases/tourgenius-01.jpg" alt="Макет Mini App ТурГений: карточка места в ленте" data-i18n-alt="tg.alt1" />
+              <img src="./cases/tourgenius-02.jpg" alt="Продукт, проблема и решение ТурГения" data-i18n-alt="tg.alt2" />
               <img src="./cases/tourgenius-03.jpg" alt="Экраны Mini App ТурГений" data-i18n-alt="tg.alt3" />
-              <img
-                src="./cases/tourgenius-05.jpg"
-                alt="Зоны ответственности и&nbsp;подход Zero-to-One"
-                data-i18n-alt="tg.alt4"
-              />
+              <img src="./cases/tourgenius-04.jpg" alt="Слайд презентации ТурГений" data-i18n-alt="tg.alt5" />
+              <img src="./cases/tourgenius-05.jpg" alt="Зоны ответственности и подход Zero-to-One" data-i18n-alt="tg.alt4" />
+              <img src="./cases/tourgenius-06.jpg" alt="Слайд презентации ТурГений" data-i18n-alt="tg.alt6" />
             </div>
           </article>
+        
+            </div>
+          </div>
+          </div>
         </div>
       </section>
 
@@ -688,5 +757,50 @@
         <img alt="" />
       </div>
     </dialog>
-  </body>
+  
+  <script>
+    (function () {
+      document.querySelectorAll(".cases-group").forEach(function (group) {
+        var rail = group.querySelector(".cases-rail");
+        var nav = group.querySelector(".cases-nav-group");
+        var prev = group.querySelector(".cases-nav--prev");
+        var next = group.querySelector(".cases-nav--next");
+        if (!rail || !nav) return;
+        function step() {
+          var card = rail.querySelector(".case");
+          return (card ? card.getBoundingClientRect().width : 560) + 20;
+        }
+        function sync() {
+          var canScroll = rail.scrollWidth > rail.clientWidth + 2;
+          nav.hidden = !canScroll;
+          if (!canScroll) return;
+          var max = rail.scrollWidth - rail.clientWidth - 2;
+          if (prev) prev.disabled = rail.scrollLeft <= 2;
+          if (next) next.disabled = rail.scrollLeft >= max;
+        }
+        prev &&
+          prev.addEventListener("click", function () {
+            rail.scrollBy({ left: -step(), behavior: "smooth" });
+          });
+        next &&
+          next.addEventListener("click", function () {
+            rail.scrollBy({ left: step(), behavior: "smooth" });
+          });
+        rail.addEventListener("scroll", sync, { passive: true });
+        window.addEventListener("resize", sync);
+        if (window.ResizeObserver) {
+          new ResizeObserver(sync).observe(rail);
+          var track = rail.querySelector(".cases-track");
+          if (track) new ResizeObserver(sync).observe(track);
+        }
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(sync);
+        }
+        window.addEventListener("load", sync);
+        sync();
+      });
+    })();
+  </script>
+
+</body>
 </html>
