@@ -22,17 +22,23 @@ BLUE = (91, 159, 208)
 PEACH = (255, 179, 115)
 VIOLET = (92, 92, 238)
 
-FONT_REG = r"C:\Windows\Fonts\segoeui.ttf"
-FONT_SEMIBOLD = r"C:\Windows\Fonts\seguisb.ttf"
-FONT_BOLD = r"C:\Windows\Fonts\segoeuib.ttf"
+FONT_DIR = r"C:\Users\Лидия\AppData\Local\Microsoft\Windows\Fonts"
+FONT_BY_WEIGHT = {
+    400: os.path.join(FONT_DIR, "Gilroy-Regular.ttf"),
+    500: os.path.join(FONT_DIR, "Gilroy-Regular.ttf"),
+    600: os.path.join(FONT_DIR, "Gilroy-Semibold.ttf"),
+    700: os.path.join(FONT_DIR, "Gilroy-Bold.ttf"),
+}
 
 
 def load_font(size: int, weight: int = 500) -> ImageFont.FreeTypeFont:
-    path = FONT_REG
-    if weight >= 700:
-        path = FONT_BOLD
-    elif weight >= 600:
-        path = FONT_SEMIBOLD
+    path = FONT_BY_WEIGHT.get(weight) or FONT_BY_WEIGHT[500]
+    if not os.path.exists(path):
+        # fallbacks if a face is missing
+        for candidate in FONT_BY_WEIGHT.values():
+            if os.path.exists(candidate):
+                path = candidate
+                break
     return ImageFont.truetype(path, size)
 
 
