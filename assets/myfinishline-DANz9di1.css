@@ -327,7 +327,7 @@ img,svg,video{max-width:100%;height:auto}
     padding:14px 14px 12px !important;
   }
   #beanabox .case-metrics li{
-    padding:8px 6px !important;
+    padding:10px 6px !important;
     flex-direction:column !important;
     align-items:center !important;
     justify-content:center;
@@ -335,7 +335,8 @@ img,svg,video{max-width:100%;height:auto}
     gap:4px;
   }
   .case-metrics b{font-size:1.55rem !important}
-  #beanabox .case-metrics b{font-size:.95rem !important}
+  #beanabox .case-metrics b{font-size:1rem !important;font-weight:500 !important;background:transparent !important;padding:0 !important}
+  .metrics-kicker{font-size:11px;margin:8px 0 6px}
   .meta-row{gap:6px 10px;font-size:13px}
   .phones{min-height:230px;margin:4px 0 12px}
   .phone{width:min(130px,44%);max-width:44%}
@@ -497,14 +498,22 @@ img,svg,video{max-width:100%;height:auto}
 .meta-row--role > span:first-child{
   background:#f0fad0;color:#1a1c1f;
 }
-/* Metrics in one compact row */
+/* Metrics kicker + strict badges (match meta chips) */
+.metrics-kicker{
+  margin:10px 0 8px;
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:.02em;
+  color:#6b7280;
+  line-height:1.3;
+}
 #beanabox .case-metrics,
 .cases-track .case-metrics{
   display:flex !important;
   flex-wrap:nowrap;
   grid-template-columns:none !important;
   gap:8px !important;
-  margin:6px 0 12px !important;
+  margin:0 0 14px !important;
 }
 #beanabox .case-metrics li,
 .cases-track .case-metrics li{
@@ -516,20 +525,34 @@ img,svg,video{max-width:100%;height:auto}
   justify-content:center;
   text-align:center;
   gap:6px;
-  padding:10px 8px !important;
+  padding:12px 10px !important;
+  border-radius:10px !important;
+  background:#f3f5f7 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  overflow:hidden;
 }
+#beanabox .case-metrics li::before,
+.cases-track .case-metrics li::before{display:none !important;content:none !important}
 #beanabox .case-metrics b,
 .cases-track .case-metrics b{
-  font-size:1.05rem !important;
-  padding:3px 7px;
+  font-size:1.15rem !important;
+  font-weight:500 !important;
+  letter-spacing:-.03em;
+  padding:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  color:#1a1c1f !important;
   flex-shrink:0;
 }
 #beanabox .case-metrics span,
 .cases-track .case-metrics span{
   font-size:.72rem !important;
+  font-weight:400 !important;
   line-height:1.25;
   padding-left:0;
   text-align:center;
+  color:#6b7280 !important;
 }
 /* Phones face each other */
 .cases-track .phones,
@@ -617,7 +640,7 @@ img,svg,video{max-width:100%;height:auto}
   #beanabox .case-metrics,
   .cases-track .case-metrics{gap:6px !important}
   #beanabox .case-metrics b,
-  .cases-track .case-metrics b{font-size:.95rem !important}
+  .cases-track .case-metrics b{font-size:1rem !important;font-weight:500 !important;background:transparent !important;padding:0 !important}
   #beanabox .case-metrics span,
   .cases-track .case-metrics span{font-size:.68rem !important}
 }
