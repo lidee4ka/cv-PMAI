@@ -47,33 +47,14 @@
         }
       })()
     </script>
-    <script>
-      (function () {
-        var key = 'cv-pmai-v'
-        var url = './version.json?_=' + Date.now()
-        fetch(url, { cache: 'no-store' })
-          .then(function (r) { return r.ok ? r.json() : null })
-          .then(function (data) {
-            if (!data || !data.v) return
-            var prev = localStorage.getItem(key)
-            if (prev && prev !== data.v) {
-              localStorage.setItem(key, data.v)
-              var next = new URL(location.href)
-              next.searchParams.set('_v', data.v)
-              location.replace(next.toString())
-              return
-            }
-            localStorage.setItem(key, data.v)
-          })
-          .catch(function () {})
-      })()
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <script src="./assets/cache-bust.js" data-version-url="./version.json" defer></script>
     <script type="module" crossorigin src="./assets/myfinishline-Dg-Q-eZ1.js?v=lightbox-fit-1"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
     <link rel="stylesheet" crossorigin href="./assets/myfinishline-DANz9di1.css?v=landings-in-cases-13">
@@ -91,7 +72,8 @@
         </a>
         <nav class="nav" aria-label="Разделы" data-i18n-aria="nav.label">
           <a href="#kejsy" data-i18n="nav.cases">Кейсы</a>
-          <a href="#obo-mne" data-i18n="nav.why">Подход к&nbsp;работе</a>
+          <a href="#obo-mne" data-i18n="nav.why">Подход</a>
+          <a href="#sajty" data-i18n="nav.sites">Лендинги</a>
           <a href="#opyt" data-i18n="nav.experience">Опыт</a>
           <a href="#obrazovanie" data-i18n="nav.education">Образование</a>
           <a href="#kontakty" data-i18n="nav.contact">Контакты</a>
@@ -656,6 +638,7 @@
         <div class="wrap">
           <div class="section-head">
             <h2 data-i18n="exp.title">Опыт</h2>
+            <p class="muted" data-i18n="exp.sub">То, что можно проверить по&nbsp;LinkedIn и&nbsp;живым ссылкам</p>
           </div>
           <div class="timeline">
             <article class="job">
@@ -680,15 +663,14 @@
             </article>
             <article class="job">
               <div>
-                <div class="when" data-i18n="exp.rs.when">июн&nbsp;2012&nbsp;— фев&nbsp;2025 · 12&nbsp;лет 9&nbsp;мес</div>
-                <p class="muted" data-i18n="exp.rs.co">RuSoft</p>
+                <div class="when" data-i18n="exp.rs.when">до продуктового трека</div>
+                <p class="muted">RuSoft</p>
               </div>
               <div>
-                <h3 data-i18n="exp.rs.h3">Project Manager&nbsp;/ Product Owner (selected projects)</h3>
+                <h3 data-i18n="exp.rs.h3">Product Owner&nbsp;/ Project Manager</h3>
                 <p data-i18n="exp.rs.p">
-                  Внешние и&nbsp;внутренние проекты: до&nbsp;10&nbsp;параллельно, команды до&nbsp;15&nbsp;человек, ТЗ и&nbsp;delivery.
-                  В&nbsp;том числе продукт онлайн-сервиса по&nbsp;управлению кандидатами для&nbsp;проекта «Работа в&nbsp;Макдональдс Россия».
-                  «Менеджер года»&nbsp;2014 по&nbsp;KPI продаж и&nbsp;клиентской базы</p>
+                  До&nbsp;10&nbsp;проектов параллельно, команды до&nbsp;15&nbsp;человек, внутренние продукты и&nbsp;ТЗ.
+                  Победитель «Менеджер года» по&nbsp;KPI продаж и&nbsp;клиентской базы</p>
               </div>
             </article>
           </div>
